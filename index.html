@@ -1,624 +1,995 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grand Valley Garage Doors - Reliable Doors. Remarkable Service</title>
-    <meta name="description" content="Professional garage door services in Grand Valley, Colorado. Installation, repair, and maintenance for residential and commercial properties." />
+    <title>
+      Dooflix
+    </title>
+    <meta
+      name="description"
+      content="Professional garage door services in Grand Valley, Colorado. Installation, repair, and maintenance for residential and commercial properties."
+    />
     <meta name="author" content="Grand Valley Garage Doors" />
 
-    <meta property="og:title" content="Grand Valley Garage Doors - Reliable Doors. Remarkable Service" />
-    <meta property="og:description" content="Professional garage door services in Grand Valley, Colorado. Installation, repair, and maintenance for residential and commercial properties." />
+    <meta
+      property="og:title"
+      content="Grand Valley Garage Doors - Reliable Doors. Remarkable Service"
+    />
+    <meta
+      property="og:description"
+      content="Professional garage door services in Grand Valley, Colorado. Installation, repair, and maintenance for residential and commercial properties."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.grandvalleygaragedoors.com/wp-content/uploads/2025/02/Grand-Valley-Garage-Doors-Delta-logo.jpg" />
+    <meta
+      property="og:image"
+      content="https://www.grandvalleygaragedoors.com/wp-content/uploads/2025/02/Grand-Valley-Garage-Doors-Delta-logo.jpg"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://www.grandvalleygaragedoors.com/wp-content/uploads/2025/02/Grand-Valley-Garage-Doors-Delta-logo.jpg" />
-    
+    <meta
+      name="twitter:image"
+      content="https://www.grandvalleygaragedoors.com/wp-content/uploads/2025/02/Grand-Valley-Garage-Doors-Delta-logo.jpg"
+    />
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .primary-color {
+        color: #535da1;
+      }
+      .bg-primary {
+        background-color: #535da1;
+      }
+      .hover-primary:hover {
+        color: #535da1;
+      }
+
+      .smooth-scroll {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in-up {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      /* Mobile optimizations */
+      @media (max-width: 768px) {
+        .hero-content {
+          min-height: 70vh;
         }
 
-        body {
-            font-family: 'DM Sans', sans-serif;
-            line-height: 1.6;
-            color: #333;
+        .section-padding {
+          padding: 3rem 0;
         }
+      }
 
-        .primary-color { color: #535da1; }
-        .bg-primary { background-color: #535da1; }
-        .hover-primary:hover { color: #535da1; }
-
-        .smooth-scroll {
-            scroll-behavior: smooth;
-        }
-
-        /* Custom animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        /* Mobile optimizations */
-        @media (max-width: 768px) {
-            .hero-content {
-                min-height: 70vh;
-            }
-            
-            .section-padding {
-                padding: 3rem 0;
-            }
-        }
-
-        /* Header backdrop blur effect */
-        .header-blur {
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
+      /* Header backdrop blur effect */
+      .header-blur {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
     </style>
-</head>
+  </head>
 
-<body class="smooth-scroll">
+  <body class="smooth-scroll">
     <!-- Header -->
-    <nav id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between h-20">
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="lg:hidden p-2">
-                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
+    <Header
+      id="header"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-20">
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2">
+            <svg
+              id="menu-icon"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+            <svg
+              id="close-icon"
+              class="w-6 h-6 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
 
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-                    <img src="https://www.grandvalleygaragedoors.com/wp-content/uploads/2025/02/Grand-Valley-Garage-Doors-Delta-logo.jpg" 
-                         alt="Grand Valley Garage Doors" class="h-8 w-auto" />
-                </div>
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <img
+              src="Dooflix-Logo.webp"
+              alt="Dooflix Logo"
+              class="h-8 w-auto"
+            />
+          </div>
 
-                <!-- Mobile Book Now Button -->
-                <div class="lg:hidden flex items-center space-x-2">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                    </svg>
-                    <button onclick="scrollToSection('contact')" class="bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90 transition-colors">
-                        Book Now
-                    </button>
-                </div>
+          <!-- Mobile Book Now Button -->
+          <div class="lg:hidden flex items-center space-x-2">
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              ></path>
+            </svg>
+            <button
+              onclick="scrollToSection('contact')"
+              class="bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90 transition-colors"
+            >
+              Book Now
+            </button>
+          </div>
 
-                <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center space-x-8">
-                    <button onclick="scrollToSection('hero')" class="hover-primary transition-colors">Home</button>
-                    <button onclick="scrollToSection('about')" class="hover-primary transition-colors">About</button>
-                    <button onclick="scrollToSection('services')" class="hover-primary transition-colors">Services</button>
-                    <button onclick="scrollToSection('more')" class="hover-primary transition-colors">More</button>
-                    <button onclick="scrollToSection('contact')" class="hover-primary transition-colors">Contact</button>
-                </div>
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <button
+              onclick="scrollToSection('hero')"
+              class="hover-primary transition-colors"
+            >
+              Home
+            </button>
+            <button
+              onclick="scrollToSection('about')"
+              class="hover-primary transition-colors"
+            >
+              About
+            </button>
+            <button
+              onclick="scrollToSection('services')"
+              class="hover-primary transition-colors"
+            >
+              Services
+            </button>
+            <button
+              onclick="scrollToSection('more')"
+              class="hover-primary transition-colors"
+            >
+              More
+            </button>
+            <button
+              onclick="scrollToSection('contact')"
+              class="hover-primary transition-colors"
+            >
+              Contact
+            </button>
+          </div>
 
-                <!-- Desktop Book Now Button -->
-                <div class="hidden lg:flex items-center space-x-3">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                    </svg>
-                    <button onclick="scrollToSection('contact')" class="bg-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition-colors">
-                        Book Now
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="lg:hidden bg-white/95 backdrop-blur-md border-t hidden">
-                <div class="px-4 py-4 space-y-3">
-                    <button onclick="scrollToSection('hero')" class="block w-full text-left py-2 hover-primary transition-colors">Home</button>
-                    <button onclick="scrollToSection('about')" class="block w-full text-left py-2 hover-primary transition-colors">About</button>
-                    <button onclick="scrollToSection('services')" class="block w-full text-left py-2 hover-primary transition-colors">Services</button>
-                    <button onclick="scrollToSection('more')" class="block w-full text-left py-2 hover-primary transition-colors">More</button>
-                    <button onclick="scrollToSection('contact')" class="block w-full text-left py-2 hover-primary transition-colors">Contact</button>
-                </div>
-            </div>
+          <!-- Desktop Book Now Button -->
+          <div class="hidden lg:flex items-center space-x-3">
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              ></path>
+            </svg>
+            <button
+              onclick="scrollToSection('contact')"
+              class="bg-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition-colors"
+            >
+              Book Now
+            </button>
+          </div>
         </div>
-    </nav>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="lg:hidden bg-white/95 backdrop-blur-md border-t hidden"
+        >
+          <div class="px-4 py-4 space-y-3">
+            <button
+              onclick="scrollToSection('hero')"
+              class="block w-full text-left py-2 hover-primary transition-colors"
+            >
+              Home
+            </button>
+            <button
+              onclick="scrollToSection('about')"
+              class="block w-full text-left py-2 hover-primary transition-colors"
+            >
+              About
+            </button>
+            <button
+              onclick="scrollToSection('services')"
+              class="block w-full text-left py-2 hover-primary transition-colors"
+            >
+              Services
+            </button>
+            <button
+              onclick="scrollToSection('more')"
+              class="block w-full text-left py-2 hover-primary transition-colors"
+            >
+              More
+            </button>
+            <button
+              onclick="scrollToSection('contact')"
+              class="block w-full text-left py-2 hover-primary transition-colors"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </Header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        
-        <!-- Background Wave Design -->
-        <div class="absolute inset-0">
-            <!-- Purple to Blue Gradient Background -->
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-600 via-blue-600 to-blue-700"></div>
+    <section
+      id="hero"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <!-- Background Wave Design -->
+      <div class="absolute inset-0">
+        <!-- Purple to Blue Gradient Background -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-purple-600 via-blue-600 to-blue-700"
+        ></div>
+
+        <!-- Green Wave Shape -->
+       
+      </div>
+
+      <!-- Main Content -->
+      <div class="container w-full mx-auto px-4 py-20 relative z-10">
+        <div
+          class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+        >
+          <!-- Left Content -->
+          <div class="space-y-6 lg:space-y-8 order-2 lg:order-1">
+            <!-- Logo and Title Container -->
+            <div
+              class="bg-green-600/95 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-lg inline-flex items-center space-x-4 max-w-fit border border-green-500/30"
+            >
+              <div class="bg-orange-500 rounded-full p-3 flex-shrink-0">
+                <img
+                  src="Dooflix.webp"
+                  alt="Dooflix icon"
+                  class="w-8 h-8 object-contain filter brightness-0 invert"
+                />
+              </div>
+              <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-white">
+                Dooflix APK Official Website
+              </h1>
+            </div>
+
+            <!-- Tagline -->
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6"
+            >
+              Reliable Doors.<br />
+              <span class="text-white/90">Remarkable Service</span>
+            </h2>
+
+            <!-- Description -->
+            <p
+              class="text-lg lg:text-xl text-white/90 max-w-lg leading-relaxed"
+            >
+              Your trusted partner for high-quality garage door services in the
+              Grand Valley region. We specialize in installation, repairs,
+              maintenance, and opener systems.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="pt-4">
+              <button
+                onclick="scrollToSection('about')"
+                class="bg-primary hover:opacity-90 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                Let's Begin
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative order-1 lg:order-2">
+              <img
+                src="Dooflix.webp"
+                alt="Dooflix APK"
+                class="w-full h-auto"
+              />
+              <!-- Image Overlay for better text readability on mobile -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent lg:hidden"
+              ></div>
             
-            <!-- Green Wave Shape -->
-            <div class="absolute inset-0">
-                <svg viewBox="0 0 1440 800" class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
-                    <path d="M0,400 C400,200 600,600 1440,300 L1440,800 L0,800 Z" fill="url(#greenGradient)" class="opacity-95" />
-                    <defs>
-                        <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#10b981" />
-                            <stop offset="50%" stop-color="#059669" />
-                            <stop offset="100%" stop-color="#047857" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+          </div>
         </div>
-
-        <!-- Main Content -->
-        <div class="container mx-auto px-4 py-20 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[70vh]">
-                
-                <!-- Left Content -->
-                <div class="space-y-6 lg:space-y-8 order-2 lg:order-1">
-                    
-                    <!-- Logo and Title Container -->
-                    <div class="bg-green-600/95 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-lg inline-flex items-center space-x-4 max-w-fit border border-green-500/30">
-                        <div class="bg-orange-500 rounded-full p-3 flex-shrink-0">
-                            <img src="https://cdn-icons-png.freepik.com/512/4070/4070253.png" 
-                                 alt="Garage Icon" class="w-8 h-8 object-contain filter brightness-0 invert" />
-                        </div>
-                        <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-white">
-                            Grand Valley Garage Doors
-                        </h1>
-                    </div>
-
-                    <!-- Tagline -->
-                    <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6">
-                        Reliable Doors.<br />
-                        <span class="text-white/90">Remarkable Service</span>
-                    </h2>
-
-                    <!-- Description -->
-                    <p class="text-lg lg:text-xl text-white/90 max-w-lg leading-relaxed">
-                        Your trusted partner for high-quality garage door services in the Grand Valley region. 
-                        We specialize in installation, repairs, maintenance, and opener systems.
-                    </p>
-
-                    <!-- CTA Button -->
-                    <div class="pt-4">
-                        <button onclick="scrollToSection('about')" 
-                                class="bg-primary hover:opacity-90 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
-                            Let's Begin
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Right Image -->
-                <div class="relative order-1 lg:order-2">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-                        <img src="https://www.grandvalleygaragedoors.com/wp-content/uploads/2025/02/grand-valley-garage-doors-delta-co.jpg" 
-                             alt="Grand Valley Garage Doors Service" class="w-full h-auto object-cover aspect-[4/3]" />
-                        
-                        <!-- Image Overlay for better text readability on mobile -->
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent lg:hidden"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-primary text-white">
-        <div class="container mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                
-                <!-- Left Column: Embedded Website -->
-                <div class="order-2 lg:order-1">
-                    <iframe src="https://www.grandvalleygaragedoors.com/" 
-                            title="Grand Valley Garage Doors Website"
-                            class="w-full h-[600px] rounded-lg border-0"
-                            loading="lazy">
-                    </iframe>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Column: Embedded Website -->
+          <div class="order-2 lg:order-1">
+            <iframe
+              src="https://www.grandvalleygaragedoors.com/"
+              title="Grand Valley Garage Doors Website"
+              class="w-full h-[600px] rounded-lg border-0"
+              loading="lazy"
+            >
+            </iframe>
+          </div>
 
-                <!-- Right Column: Text Content -->
-                <div class="order-1 lg:order-2 space-y-6">
-                    <div class="flex items-center justify-end space-x-4 mb-6">
-                        <h2 class="text-4xl lg:text-5xl font-bold">
-                            Grand Valley Garage Doors
-                        </h2>
-                        <img src="https://cdn-icons-png.freepik.com/512/4070/4070253.png" 
-                             alt="Garage Icon" class="w-12 h-12 object-contain filter brightness-0 invert" />
-                    </div>
-
-                    <h3 class="text-2xl font-semibold mb-4">
-                        Secure. Stylish. Built to last
-                    </h3>
-
-                    <div class="space-y-4 text-gray-200">
-                        <p>
-                            <a href="https://www.grandvalleygaragedoors.com/" 
-                               class="font-bold text-white hover:underline" target="_blank" rel="noopener noreferrer">
-                                Grand Valley Garage Doors
-                            </a> 
-                            is your trusted partner for high-quality garage door services in the Grand Valley region and beyond. We specialize in garage door installation, repairs, maintenance, and opener systems for both residential and commercial properties. With a focus on safety, durability, and style, our team is dedicated to delivering seamless solutions that enhance your home or business's functionality and curb appeal.
-                        </p>
-
-                        <p>
-                            From emergency repairs to custom installations, we combine expert craftsmanship with premium materials to ensure every door we work on is reliable, secure, and built to withstand the test of time. At Grand Valley Garage Doors, we don't just fix and install doors—we provide peace of mind with every project. Proudly serving our community with honesty, professionalism, and attention to detail, we're here to help you open the door to quality service.
-                        </p>
-                    </div>
-                </div>
-
+          <!-- Right Column: Text Content -->
+          <div class="order-1 lg:order-2 space-y-6">
+            <div class="flex items-center justify-end space-x-4 mb-6">
+              <h2 class="text-4xl lg:text-5xl font-bold">
+                Grand Valley Garage Doors
+              </h2>
+              <img
+                src="https://cdn-icons-png.freepik.com/512/4070/4070253.png"
+                alt="Garage Icon"
+                class="w-12 h-12 object-contain filter brightness-0 invert"
+              />
             </div>
+
+            <h3 class="text-2xl font-semibold mb-4">
+              Secure. Stylish. Built to last
+            </h3>
+
+            <div class="space-y-4 text-gray-200">
+              <p>
+                <a
+                  href="https://www.grandvalleygaragedoors.com/"
+                  class="font-bold text-white hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Grand Valley Garage Doors
+                </a>
+                is your trusted partner for high-quality garage door services in
+                the Grand Valley region and beyond. We specialize in garage door
+                installation, repairs, maintenance, and opener systems for both
+                residential and commercial properties. With a focus on safety,
+                durability, and style, our team is dedicated to delivering
+                seamless solutions that enhance your home or business's
+                functionality and curb appeal.
+              </p>
+
+              <p>
+                From emergency repairs to custom installations, we combine
+                expert craftsmanship with premium materials to ensure every door
+                we work on is reliable, secure, and built to withstand the test
+                of time. At Grand Valley Garage Doors, we don't just fix and
+                install doors—we provide peace of mind with every project.
+                Proudly serving our community with honesty, professionalism, and
+                attention to detail, we're here to help you open the door to
+                quality service.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Values Section -->
     <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">
-                    Grand Valley Garage Doors
-                </h2>
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">
+            Grand Valley Garage Doors
+          </h2>
 
-                <div class="space-y-12">
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">
-                            The Grand Valley Difference – Reliable, Professional, and Built Around You
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            From the first call to final installation, Grand Valley Garage Doors is committed to making your experience smooth, transparent, and fully tailored to your needs. Whether you're replacing an outdated system or tackling a garage door emergency, our team responds promptly with expert guidance and dependable service. We help you choose the right style, material, and functionality to match your home and lifestyle, and we take care of everything from hardware and opener recommendations to safety checks, so you can feel confident every step of the way. With a passion for honest work and quality craftsmanship, we ensure every job is completed with precision and care.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">
-                            Secure Solutions, Designed to Last
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Your garage door plays a vital role in your home's security, efficiency, and curb appeal—and we treat it that way. At Grand Valley Garage Doors, we provide top-tier installation and repair services using trusted brands and durable components that are built to perform in Colorado's ever-changing climate. Our skilled technicians are trained to handle everything from broken springs and worn rollers to smart opener upgrades and full custom door installations. Whether you're enhancing your property's value or restoring its function, we approach each project with long-term results in mind—so you get performance you can count on, year after year.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">
-                            Proudly Serving the Western Slope
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Based in Grand Junction, Grand Valley Garage Doors proudly serves homeowners and builders across the Grand Valley, including Fruita, Palisade, Clifton, Redlands, and nearby areas. With local expertise and a commitment to quality, we deliver garage door solutions that fit your space, style, and needs. Count on us for fast, reliable service and long-lasting results throughout Western Colorado.
-                        </p>
-                    </div>
-                </div>
+          <div class="space-y-12">
+            <div>
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800">
+                The Grand Valley Difference – Reliable, Professional, and Built
+                Around You
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                From the first call to final installation, Grand Valley Garage
+                Doors is committed to making your experience smooth,
+                transparent, and fully tailored to your needs. Whether you're
+                replacing an outdated system or tackling a garage door
+                emergency, our team responds promptly with expert guidance and
+                dependable service. We help you choose the right style,
+                material, and functionality to match your home and lifestyle,
+                and we take care of everything from hardware and opener
+                recommendations to safety checks, so you can feel confident
+                every step of the way. With a passion for honest work and
+                quality craftsmanship, we ensure every job is completed with
+                precision and care.
+              </p>
             </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800">
+                Secure Solutions, Designed to Last
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Your garage door plays a vital role in your home's security,
+                efficiency, and curb appeal—and we treat it that way. At Grand
+                Valley Garage Doors, we provide top-tier installation and repair
+                services using trusted brands and durable components that are
+                built to perform in Colorado's ever-changing climate. Our
+                skilled technicians are trained to handle everything from broken
+                springs and worn rollers to smart opener upgrades and full
+                custom door installations. Whether you're enhancing your
+                property's value or restoring its function, we approach each
+                project with long-term results in mind—so you get performance
+                you can count on, year after year.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-semibold mb-4 text-gray-800">
+                Proudly Serving the Western Slope
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Based in Grand Junction, Grand Valley Garage Doors proudly
+                serves homeowners and builders across the Grand Valley,
+                including Fruita, Palisade, Clifton, Redlands, and nearby areas.
+                With local expertise and a commitment to quality, we deliver
+                garage door solutions that fit your space, style, and needs.
+                Count on us for fast, reliable service and long-lasting results
+                throughout Western Colorado.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-6xl mx-auto">
-                
-                <!-- Section Header -->
-                <div class="text-center mb-16">
-                    <div class="flex items-center justify-center space-x-4 mb-6">
-                        <img src="https://www.svgrepo.com/show/192522/customer-service-support.svg" 
-                             alt="Customer Service Icon" class="w-12 h-12 object-contain" />
-                        <h2 class="text-4xl font-bold text-gray-800">Our Services</h2>
-                    </div>
-                </div>
-
-                <!-- Intro Text -->
-                <div class="mb-12">
-                    <div class="max-w-3xl">
-                        <p class="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-4">
-                            Garage Door Services Tailored for Your Home and Lifestyle
-                        </p>
-                        <p class="text-gray-600 leading-relaxed mb-8">
-                            At Grand Valley Garage Doors, we provide a complete range of garage door services designed to keep your home secure, functional, and visually appealing. With every job, we prioritize quality craftsmanship, timely service, and solutions that meet the unique needs of Western Colorado homeowners. Here's what we offer:
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Services Grid -->
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                        <div class="flex items-center space-x-3 mb-4">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-gray-800">Residential Garage Doors</h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed">
-                            We offer a wide selection of stylish, durable garage doors designed specifically for homes throughout the Grand Valley. Whether you want to enhance curb appeal, improve security, or upgrade to a modern smart system, our residential doors combine functionality with attractive designs to suit any home style.
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                        <div class="flex items-center space-x-3 mb-4">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-gray-800">Commercial Garage Doors</h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed">
-                            Grand Valley Garage Doors provides robust and reliable solutions for businesses and industrial properties. Our commercial garage doors are built to withstand heavy use and harsh conditions, offering security and efficiency for warehouses, shops, and service centers.
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                        <div class="flex items-center space-x-3 mb-4">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-gray-800">Overhead Garage Doors</h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed">
-                            Specializing in overhead garage doors, we supply and service options that maximize space and ease of use for residential and commercial properties alike. From traditional sectional doors to modern insulated designs, our overhead doors provide convenience, durability, and enhanced security.
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                        <div class="flex items-center space-x-3 mb-4">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V5a1 1 0 011-1h3a1 1 0 001-1V3a2 2 0 012-2z"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-gray-800">Garage Door Maintenance</h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed">
-                            Preventative maintenance keeps your door operating smoothly year-round. We provide inspections, tune-ups, and lubrication services that extend the life of your door and catch problems before they become costly repairs.
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                        <div class="flex items-center space-x-3 mb-4">
-                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <h3 class="text-xl font-semibold text-gray-800">Openers & Accessories</h3>
-                        </div>
-                        <p class="text-gray-600 leading-relaxed">
-                            Whether you're upgrading to a quieter motor or want the convenience of Wi-Fi-connected openers, we install and service a wide range of modern opener systems and accessories for greater control and security.
-                        </p>
-                    </div>
-                </div>
-
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <div class="flex items-center justify-center space-x-4 mb-6">
+              <img
+                src="https://www.svgrepo.com/show/192522/customer-service-support.svg"
+                alt="Customer Service Icon"
+                class="w-12 h-12 object-contain"
+              />
+              <h2 class="text-4xl font-bold text-gray-800">Our Services</h2>
             </div>
+          </div>
+
+          <!-- Intro Text -->
+          <div class="mb-12">
+            <div class="max-w-3xl">
+              <p
+                class="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-4"
+              >
+                Garage Door Services Tailored for Your Home and Lifestyle
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-8">
+                At Grand Valley Garage Doors, we provide a complete range of
+                garage door services designed to keep your home secure,
+                functional, and visually appealing. With every job, we
+                prioritize quality craftsmanship, timely service, and solutions
+                that meet the unique needs of Western Colorado homeowners.
+                Here's what we offer:
+              </p>
+            </div>
+          </div>
+
+          <!-- Services Grid -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <svg
+                  class="w-8 h-8 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  ></path>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Residential Garage Doors
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                We offer a wide selection of stylish, durable garage doors
+                designed specifically for homes throughout the Grand Valley.
+                Whether you want to enhance curb appeal, improve security, or
+                upgrade to a modern smart system, our residential doors combine
+                functionality with attractive designs to suit any home style.
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <svg
+                  class="w-8 h-8 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  ></path>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Commercial Garage Doors
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Grand Valley Garage Doors provides robust and reliable solutions
+                for businesses and industrial properties. Our commercial garage
+                doors are built to withstand heavy use and harsh conditions,
+                offering security and efficiency for warehouses, shops, and
+                service centers.
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <svg
+                  class="w-8 h-8 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Overhead Garage Doors
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Specializing in overhead garage doors, we supply and service
+                options that maximize space and ease of use for residential and
+                commercial properties alike. From traditional sectional doors to
+                modern insulated designs, our overhead doors provide
+                convenience, durability, and enhanced security.
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <svg
+                  class="w-8 h-8 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V5a1 1 0 011-1h3a1 1 0 001-1V3a2 2 0 012-2z"
+                  ></path>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Garage Door Maintenance
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Preventative maintenance keeps your door operating smoothly
+                year-round. We provide inspections, tune-ups, and lubrication
+                services that extend the life of your door and catch problems
+                before they become costly repairs.
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
+            >
+              <div class="flex items-center space-x-3 mb-4">
+                <svg
+                  class="w-8 h-8 text-primary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Openers & Accessories
+                </h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Whether you're upgrading to a quieter motor or want the
+                convenience of Wi-Fi-connected openers, we install and service a
+                wide range of modern opener systems and accessories for greater
+                control and security.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- More Section -->
     <section id="more" class="py-20 bg-primary">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <div class="flex items-center justify-center space-x-4 mb-8">
-                    <img src="https://cdn-icons-png.freepik.com/512/9356/9356230.png" 
-                         alt="More Icon" class="w-12 h-12 object-contain filter brightness-0 invert" />
-                    <h2 class="text-4xl font-bold text-white">More</h2>
-                </div>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <div class="flex items-center justify-center space-x-4 mb-8">
+            <img
+              src="https://cdn-icons-png.freepik.com/512/9356/9356230.png"
+              alt="More Icon"
+              class="w-12 h-12 object-contain filter brightness-0 invert"
+            />
+            <h2 class="text-4xl font-bold text-white">More</h2>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Location Info Section -->
     <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                
-                <!-- Left Column: Google Map -->
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.75661200040676!2d-108.02157517795197!3d38.6464477350582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87475330ffb88b1b%3A0xdf773034621e7122!2sGrand%20Valley%20Garage%20Doors%20Repair%20%26%20Installation!5e0!3m2!1sen!2sus!4v1748277385364!5m2!1sen!2sus" 
-                            title="Grand Valley Garage Doors Location"
-                            class="w-full h-[600px] rounded-lg border-0"
-                            allowfullscreen
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Column: Google Map -->
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.75661200040676!2d-108.02157517795197!3d38.6464477350582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87475330ffb88b1b%3A0xdf773034621e7122!2sGrand%20Valley%20Garage%20Doors%20Repair%20%26%20Installation!5e0!3m2!1sen!2sus!4v1748277385364!5m2!1sen!2sus"
+              title="Grand Valley Garage Doors Location"
+              class="w-full h-[600px] rounded-lg border-0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
 
-                <!-- Right Column: Text Content -->
-                <div class="space-y-6">
-                    <h3 class="text-3xl font-bold text-gray-800">
-                        Grand Valley Garage Doors
-                    </h3>
+          <!-- Right Column: Text Content -->
+          <div class="space-y-6">
+            <h3 class="text-3xl font-bold text-gray-800">
+              Grand Valley Garage Doors
+            </h3>
 
-                    <div class="space-y-4 text-gray-600">
-                        <p>
-                            <a href="https://www.grandvalleygaragedoors.com/" 
-                               class="font-bold text-primary hover:underline" target="_blank" rel="noopener noreferrer">
-                                Grand Valley Garage Doors
-                            </a> 
-                            delivers professional, reliable, and personalized garage door services designed to meet the needs of every homeowner. From installations of high-performance garage doors to expert repairs and routine maintenance, our work is driven by craftsmanship, safety, and attention to detail. We understand the vital role your garage door plays in both security and curb appeal, which is why we approach every project with precision and care whether you're upgrading to a new style or restoring function after unexpected damage.
-                        </p>
-                        
-                        <p>
-                            Serving Grand Junction and surrounding areas across the Grand Valley, our team is proud to offer prompt, local service with a focus on lasting quality and customer satisfaction. With a deep understanding of the region's unique needs, we provide solutions that are both durable and tailored to your lifestyle. Whether you're a homeowner in need of quick service or a contractor planning a custom build, Grand Valley Garage Doors is here to provide expert support backed by years of trusted experience in Western Colorado.
-                        </p>
-                    </div>
-                </div>
+            <div class="space-y-4 text-gray-600">
+              <p>
+                <a
+                  href="https://www.grandvalleygaragedoors.com/"
+                  class="font-bold text-primary hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Grand Valley Garage Doors
+                </a>
+                delivers professional, reliable, and personalized garage door
+                services designed to meet the needs of every homeowner. From
+                installations of high-performance garage doors to expert repairs
+                and routine maintenance, our work is driven by craftsmanship,
+                safety, and attention to detail. We understand the vital role
+                your garage door plays in both security and curb appeal, which
+                is why we approach every project with precision and care whether
+                you're upgrading to a new style or restoring function after
+                unexpected damage.
+              </p>
 
+              <p>
+                Serving Grand Junction and surrounding areas across the Grand
+                Valley, our team is proud to offer prompt, local service with a
+                focus on lasting quality and customer satisfaction. With a deep
+                understanding of the region's unique needs, we provide solutions
+                that are both durable and tailored to your lifestyle. Whether
+                you're a homeowner in need of quick service or a contractor
+                planning a custom build, Grand Valley Garage Doors is here to
+                provide expert support backed by years of trusted experience in
+                Western Colorado.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Call to Action Section -->
     <section class="py-20 bg-primary text-white text-center">
-        <div class="container mx-auto px-4">
-            <h3 class="text-3xl font-bold mb-8">
-                Need garage door repair or installation? We're ready to help.
-            </h3>
-            <button onclick="scrollToSection('contact')" 
-                    class="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg rounded-lg transition-all duration-300 transform hover:scale-105">
-                Call now or book online for our service!
-            </button>
-        </div>
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold mb-8">
+          Need garage door repair or installation? We're ready to help.
+        </h3>
+        <button
+          onclick="scrollToSection('contact')"
+          class="bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg rounded-lg transition-all duration-300 transform hover:scale-105"
+        >
+          Call now or book online for our service!
+        </button>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            
-            <!-- Section Header -->
-            <div class="text-center mb-16">
-                <div class="flex items-center justify-center space-x-4 mb-6">
-                    <img src="https://icons.iconarchive.com/icons/froyoshark/enkel/512/Contacts-icon.png" 
-                         alt="Contact Icon" class="w-12 h-12 object-contain" />
-                    <h2 class="text-4xl font-bold text-gray-800">Say Hi</h2>
-                </div>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12">
-                
-                <!-- Left Column: Contact Info -->
-                <div class="space-y-8">
-                    
-                    <!-- Important Links -->
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Important Links</h3>
-                        <ul class="space-y-3">
-                            <li>
-                                <a href="https://maps.app.goo.gl/VwydsoTiSp7RjsqR7" 
-                                   target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                                    Google Business Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.grandvalleygaragedoors.com/#contact" 
-                                   target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.grandvalleygaragedoors.com/" 
-                                   target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
-                                    Grand Valley Garage Doors
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Address and Phone -->
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
-                        <div class="space-y-6">
-                            <div>
-                                <h3 class="text-xl font-semibold mb-3 text-gray-800 flex items-center">
-                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                    </svg>
-                                    Address
-                                </h3>
-                                <p class="text-gray-600 font-semibold">
-                                    3230 5700 Trail, Olathe CO 81425
-                                </p>
-                            </div>
-
-                            <div>
-                                <h3 class="text-xl font-semibold mb-3 text-gray-800 flex items-center">
-                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                    </svg>
-                                    Call
-                                </h3>
-                                <a href="tel:970-216-5273" class="text-primary hover:underline text-lg font-semibold">
-                                    970-216-5273
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Google Map -->
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.75661200040676!2d-108.02157517795197!3d38.6464477350582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87475330ffb88b1b%3A0xdf773034621e7122!2sGrand%20Valley%20Garage%20Doors%20Repair%20%26%20Installation!5e0!3m2!1sen!2sus!4v1748277385364!5m2!1sen!2sus" 
-                            class="w-full h-[450px] rounded-lg border-0"
-                            allowfullscreen
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-            </div>
+      <div class="container mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center space-x-4 mb-6">
+            <img
+              src="https://icons.iconarchive.com/icons/froyoshark/enkel/512/Contacts-icon.png"
+              alt="Contact Icon"
+              class="w-12 h-12 object-contain"
+            />
+            <h2 class="text-4xl font-bold text-gray-800">Say Hi</h2>
+          </div>
         </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Left Column: Contact Info -->
+          <div class="space-y-8">
+            <!-- Important Links -->
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                Important Links
+              </h3>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/VwydsoTiSp7RjsqR7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary hover:underline"
+                  >
+                    Google Business Profile
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.grandvalleygaragedoors.com/#contact"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary hover:underline"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.grandvalleygaragedoors.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary hover:underline"
+                  >
+                    Grand Valley Garage Doors
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Address and Phone -->
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <div class="space-y-6">
+                <div>
+                  <h3
+                    class="text-xl font-semibold mb-3 text-gray-800 flex items-center"
+                  >
+                    <svg
+                      class="w-5 h-5 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                    Address
+                  </h3>
+                  <p class="text-gray-600 font-semibold">
+                    3230 5700 Trail, Olathe CO 81425
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    class="text-xl font-semibold mb-3 text-gray-800 flex items-center"
+                  >
+                    <svg
+                      class="w-5 h-5 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      ></path>
+                    </svg>
+                    Call
+                  </h3>
+                  <a
+                    href="tel:970-216-5273"
+                    class="text-primary hover:underline text-lg font-semibold"
+                  >
+                    970-216-5273
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Google Map -->
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.75661200040676!2d-108.02157517795197!3d38.6464477350582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87475330ffb88b1b%3A0xdf773034621e7122!2sGrand%20Valley%20Garage%20Doors%20Repair%20%26%20Installation!5e0!3m2!1sen!2sus!4v1748277385364!5m2!1sen!2sus"
+              class="w-full h-[450px] rounded-lg border-0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <p class="text-gray-300">
-                    Copyright © 2025 <span class="font-bold">Grand Valley Garage Doors</span> All rights reserved.
-                </p>
-            </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <p class="text-gray-300">
+            Copyright © 2025
+            <span class="font-bold">Grand Valley Garage Doors</span> All rights
+            reserved.
+          </p>
         </div>
+      </div>
     </footer>
 
     <script>
-        // Smooth scrolling function
-        function scrollToSection(sectionId) {
-            const element = document.getElementById(sectionId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-                // Close mobile menu if open
-                const mobileMenu = document.getElementById('mobile-menu');
-                const menuIcon = document.getElementById('menu-icon');
-                const closeIcon = document.getElementById('close-icon');
-                
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            }
+      // Smooth scrolling function
+      function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+          // Close mobile menu if open
+          const mobileMenu = document.getElementById("mobile-menu");
+          const menuIcon = document.getElementById("menu-icon");
+          const closeIcon = document.getElementById("close-icon");
+
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
         }
+      }
 
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-            
-            mobileMenu.classList.toggle('hidden');
-            menuIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          const menuIcon = document.getElementById("menu-icon");
+          const closeIcon = document.getElementById("close-icon");
+
+          mobileMenu.classList.toggle("hidden");
+          menuIcon.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
         });
 
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.className = 'fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 header-blur shadow-lg';
-            } else {
-                header.className = 'fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent';
-            }
-        });
+      // Header scroll effect
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+        if (window.scrollY > 50) {
+          header.className =
+            "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 header-blur shadow-lg";
+        } else {
+          header.className =
+            "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent";
+        }
+      });
 
-        // Close mobile menu when clicking mobile nav links
-        document.querySelectorAll('#mobile-menu button').forEach(button => {
-            button.addEventListener('click', function() {
-                const mobileMenu = document.getElementById('mobile-menu');
-                const menuIcon = document.getElementById('menu-icon');
-                const closeIcon = document.getElementById('close-icon');
-                
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            });
+      // Close mobile menu when clicking mobile nav links
+      document.querySelectorAll("#mobile-menu button").forEach((button) => {
+        button.addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          const menuIcon = document.getElementById("menu-icon");
+          const closeIcon = document.getElementById("close-icon");
+
+          mobileMenu.classList.add("hidden");
+          menuIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
         });
+      });
     </script>
-</body>
+  </body>
 </html>
