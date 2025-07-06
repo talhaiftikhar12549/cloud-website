@@ -3,32 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dooflix</title>
+    <title>Dooflix APK v8.9 [Official Website] Download Movie App</title>
     <meta
       name="description"
-      content="Professional garage door services in Grand Valley, Colorado. Installation, repair, and maintenance for residential and commercial properties."
+      content="Get into the world of endless entertainment with the Dooflix app. Watch and download all the latest movies, anytime, anywhere in HD quality."
     />
-    <meta name="author" content="Grand Valley Garage Doors" />
 
+    <meta name="author" content="Dooflix" />
+    <link rel="icon" type="image/png" href="./dooflixfavicon.png" />
     <meta
       property="og:title"
-      content="Grand Valley Garage Doors - Reliable Doors. Remarkable Service"
+      content="Dooflix APK v8.9 [Official Website] Download Movie App"
     />
     <meta
       property="og:description"
-      content="Professional garage door services in Grand Valley, Colorado. Installation, repair, and maintenance for residential and commercial properties."
+      content="Get into the world of endless entertainment with the Dooflix app. Watch and download all the latest movies, anytime, anywhere in HD quality."
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://www.grandvalleygaragedoors.com/wp-content/uploads/2025/02/Grand-Valley-Garage-Doors-Delta-logo.jpg"
-    />
-
+    <meta property="og:image" content="./dooflixfavicon.png" />
+    <link rel="canonical" href="https://doooflix.com/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:image"
-      content="https://www.grandvalleygaragedoors.com/wp-content/uploads/2025/02/Grand-Valley-Garage-Doors-Delta-logo.jpg"
-    />
+    <meta name="twitter:image" content="./dooflixfavicon.png" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,14 +58,36 @@
       .hover-primary:hover {
         color: #d5a700;
       }
-      .bg-dark{
-        color: #000000;
+      .bg-dark {
+        background: #000000;
       }
-      .bg-accent{
-        color: #19191d;
+      .bg-accent {
+        background-color: #19191d;
       }
       .smooth-scroll {
         scroll-behavior: smooth;
+      }
+      ul.custom-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ul.custom-list li {
+        position: relative;
+        padding-left: 35px; /* Adjust space for the icon */
+        margin-bottom: 15px;
+      }
+
+      ul.custom-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 20px; /* Set width */
+        height: 20px; /* Set height */
+        background-image: url("./dooflixfavicon.png"); /* Your image path */
+        background-size: contain;
+        background-repeat: no-repeat;
       }
 
       /* Custom animations */
@@ -114,7 +131,7 @@
       id="header"
       class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
     >
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="flex items-center justify-between h-20">
           <!-- Mobile Menu Button -->
           <button id="mobile-menu-btn" class="lg:hidden p-2">
@@ -188,20 +205,15 @@
               onclick="scrollToSection('services')"
               class="hover-primary transition-colors"
             >
-              Services
+              Features
             </button>
             <button
               onclick="scrollToSection('more')"
               class="hover-primary transition-colors"
             >
-              More
+              Download
             </button>
-            <button
-              onclick="scrollToSection('contact')"
-              class="hover-primary transition-colors"
-            >
-              Contact
-            </button>
+            
           </div>
 
           <!-- Desktop Book Now Button -->
@@ -238,20 +250,15 @@
               onclick="scrollToSection('services')"
               class="block w-full text-left py-2 hover-primary transition-colors"
             >
-              Services
+            Features
             </button>
             <button
               onclick="scrollToSection('more')"
               class="block w-full text-left py-2 hover-primary transition-colors"
             >
-              More
+              Download
             </button>
-            <button
-              onclick="scrollToSection('contact')"
-              class="block w-full text-left py-2 hover-primary transition-colors"
-            >
-              Contact
-            </button>
+            
           </div>
         </div>
       </div>
@@ -271,7 +278,7 @@
       </div>
 
       <!-- Main Content -->
-      <div class="container w-full mx-auto px-4 py-20 relative z-10">
+      <div class="container w-full mx-auto px-8 py-20 relative z-10">
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <!-- Left Content -->
           <div class="space-y-6 lg:space-y-8 order-2 lg:order-1">
@@ -287,16 +294,15 @@
                 />
               </div>
               <h1 class="text-2xl lg:text-3xl xl:text-4xl font-bold text-white">
-                Dooflix APK Official Website
+                Dooflix APKs Website
               </h1>
             </div>
 
             <!-- Tagline -->
             <h2
-              class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6"
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6 leading-loose"
             >
-              Reliable Doors.<br />
-              <span class="text-white/90">Remarkable Service</span>
+              Download latest version of Dooflix APK v8.9
             </h2>
 
             <!-- Description -->
@@ -323,8 +329,8 @@
           </div>
 
           <!-- Right Image -->
-          <div class="relative order-1 lg:order-2">
-            <img src="Dooflix.webp" alt="Dooflix APK" class="w-full h-auto" />
+          <div class="relative order-1 lg:order-2 flex justify-end">
+            <img src="Dooflix.webp" alt="Dooflix APK" class="w-75 h-auto" />
             <!-- Image Overlay for better text readability on mobile -->
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent lg:hidden"
@@ -335,8 +341,8 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-black text-white">
-      <div class="container mx-auto px-4">
+    <section id="about" class="py-20 bg-accent text-white">
+      <div class="container mx-auto px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Left Column: Embedded Website -->
           <div class="order-2 lg:order-1">
@@ -351,49 +357,45 @@
 
           <!-- Right Column: Text Content -->
           <div class="order-1 lg:order-2 space-y-6">
-            <div class="flex items-center justify-end space-x-4 mb-6">
+            <div class="flex items-center justify-start space-x-4 mb-6">
               <h2 class="text-4xl lg:text-5xl font-bold">
-                Grand Valley Garage Doors
+                Learn More About Dooflix
               </h2>
-              <img
-                src="https://cdn-icons-png.freepik.com/512/4070/4070253.png"
-                alt="Garage Icon"
-                class="w-12 h-12 object-contain filter brightness-0 invert"
-              />
             </div>
 
             <h3 class="text-2xl font-semibold mb-4">
-              Secure. Stylish. Built to last
+              Dooflix – Unlimited Entertainment, Zero Limits.
             </h3>
 
             <div class="space-y-4 text-gray-200">
               <p>
                 <a
-                  href="https://www.grandvalleygaragedoors.com/"
+                  href="https://doooflix.com/"
                   class="font-bold text-white hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Grand Valley Garage Doors
+                  What is Dooflix?
                 </a>
-                is your trusted partner for high-quality garage door services in
-                the Grand Valley region and beyond. We specialize in garage door
-                installation, repairs, maintenance, and opener systems for both
-                residential and commercial properties. With a focus on safety,
-                durability, and style, our team is dedicated to delivering
-                seamless solutions that enhance your home or business's
-                functionality and curb appeal.
+                Dooflix is a hub of entertainment, offering more than 25,000 +
+                latest movies from around the world. A famously well-known app
+                that provides an unlimited stream of movies at your fingertips
+                for free. This is the best app among the streaming category apps
+                covering premium features. This app offers a very User-Friendly
+                Interface and seamless access so viewers can enjoy movies in a
+                peaceful environment.
               </p>
 
               <p>
-                From emergency repairs to custom installations, we combine
-                expert craftsmanship with premium materials to ensure every door
-                we work on is reliable, secure, and built to withstand the test
-                of time. At Grand Valley Garage Doors, we don't just fix and
-                install doors—we provide peace of mind with every project.
-                Proudly serving our community with honesty, professionalism, and
-                attention to detail, we're here to help you open the door to
-                quality service.
+                Dooflix always focuses on providing users with high-quality
+                content and a built-in media player that serves more efficient
+                and advanced results while surfing videos. This free Android
+                application opens up the door to endless entertainment covering
+                action, comedy, love, and the Sci-fi genre in extremely high
+                quality. If something doesn’t match up with your taste, you can
+                either play a game that blends perfectly with your genre taste,
+                like BitLife APK, or you can request to get your favorite show
+                on your favorite App.
               </p>
             </div>
           </div>
@@ -403,65 +405,60 @@
 
     <!-- Values Section -->
     <section class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">
-            Grand Valley Garage Doors
+            Key Features of Dooflix APK
           </h2>
 
           <div class="space-y-12">
             <div>
               <h3 class="text-2xl font-semibold mb-4 text-gray-800">
-                The Grand Valley Difference – Reliable, Professional, and Built
-                Around You
+                Extensive Library
               </h3>
+
               <p class="text-gray-600 leading-relaxed">
-                From the first call to final installation, Grand Valley Garage
-                Doors is committed to making your experience smooth,
-                transparent, and fully tailored to your needs. Whether you're
-                replacing an outdated system or tackling a garage door
-                emergency, our team responds promptly with expert guidance and
-                dependable service. We help you choose the right style,
-                material, and functionality to match your home and lifestyle,
-                and we take care of everything from hardware and opener
-                recommendations to safety checks, so you can feel confident
-                every step of the way. With a passion for honest work and
-                quality craftsmanship, we ensure every job is completed with
-                precision and care.
+                The moment you sign in, it opens up the doors to unlimited
+                access to entertainment, providing you with a vast variety of
+                Movies, Seasons, Web Series, and dramas from all across the
+                world. Dooflix regularly updates its library, so you always have
+                something new to watch. Its well-arranged extensive library with
+                many genres in it helps us to quickly find on-demands show. Its
+                extensive library includes nearly every show available so you
+                don’t need to buy subscription plans of other apps, removing
+                financial barriers and opening up the world of entertainment to
+                a broader audience.
               </p>
             </div>
 
             <div>
               <h3 class="text-2xl font-semibold mb-4 text-gray-800">
-                Secure Solutions, Designed to Last
+                Live Sports Channel
               </h3>
               <p class="text-gray-600 leading-relaxed">
-                Your garage door plays a vital role in your home's security,
-                efficiency, and curb appeal—and we treat it that way. At Grand
-                Valley Garage Doors, we provide top-tier installation and repair
-                services using trusted brands and durable components that are
-                built to perform in Colorado's ever-changing climate. Our
-                skilled technicians are trained to handle everything from broken
-                springs and worn rollers to smart opener upgrades and full
-                custom door installations. Whether you're enhancing your
-                property's value or restoring its function, we approach each
-                project with long-term results in mind—so you get performance
-                you can count on, year after year.
+                There is a huge fan base of sports lovers all around the world.
+                Now, you can enjoy live sports channels nonstop and free. This
+                provides value addition to sports lovers so they can track the
+                score highlights of their favorite team. This app provides a
+                fantastic live sports channel that lets you stay connected to
+                the scorecards of your favorite team and enjoy the match in
+                real-time.
               </p>
             </div>
 
             <div>
               <h3 class="text-2xl font-semibold mb-4 text-gray-800">
-                Proudly Serving the Western Slope
+                Adjust Video Quality
               </h3>
               <p class="text-gray-600 leading-relaxed">
-                Based in Grand Junction, Grand Valley Garage Doors proudly
-                serves homeowners and builders across the Grand Valley,
-                including Fruita, Palisade, Clifton, Redlands, and nearby areas.
-                With local expertise and a commitment to quality, we deliver
-                garage door solutions that fit your space, style, and needs.
-                Count on us for fast, reliable service and long-lasting results
-                throughout Western Colorado.
+                Dooflix provides a vast variety of video quality options for
+                online streaming to enhance your viewing experience. This range
+                lies from 360p to 1080p. If you have a fast internet speed
+                connection you can surf in full HD which provides you with great
+                image quality and a clear sound effect and if you are traveling
+                or want to save internet data usage, you can easily switch to
+                lower quality to get a smooth video experience without facing
+                any lagging issue.
               </p>
             </div>
           </div>
@@ -471,35 +468,41 @@
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="max-w-6xl mx-auto">
           <!-- Section Header -->
           <div class="text-center mb-16">
             <div class="flex items-center justify-center space-x-4 mb-6">
               <img
-                src="https://www.svgrepo.com/show/192522/customer-service-support.svg"
+                src="./dooflixfavicon.png"
                 alt="Customer Service Icon"
                 class="w-12 h-12 object-contain"
               />
-              <h2 class="text-4xl font-bold text-gray-800">Our Services</h2>
+              <h2 class="text-4xl font-bold text-gray-800">
+                What make us differnet
+              </h2>
             </div>
           </div>
 
           <!-- Intro Text -->
-          <div class="mb-12">
+          <div class="mb-12 flex justify-center items-center">
             <div class="max-w-3xl">
               <p
-                class="text-lg font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-4"
+                class="text-lg text-center font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-4"
               >
-                Garage Door Services Tailored for Your Home and Lifestyle
+                Cinema in Your Pocket – Dooflix Has It All.
               </p>
-              <p class="text-gray-600 leading-relaxed mb-8">
-                At Grand Valley Garage Doors, we provide a complete range of
-                garage door services designed to keep your home secure,
-                functional, and visually appealing. With every job, we
-                prioritize quality craftsmanship, timely service, and solutions
-                that meet the unique needs of Western Colorado homeowners.
-                Here's what we offer:
+              <p class="text-gray-600 leading-relaxed mb-8 text-center">
+                Step into a world where movies, web series, and TV shows are
+                always at your fingertips. Dooflix is your ultimate
+                entertainment companion — offering the latest and greatest
+                content from around the globe in a smooth, ad-free experience.
+                With lightning-fast downloads, user-friendly navigation, and
+                regular updates, Dooflix isn’t just another APK — it’s your
+                gateway to non-stop streaming joy. Whether you're into Hollywood
+                hits, gripping dramas, or trending anime, Dooflix delivers it
+                all — anytime, anywhere. No subscriptions. No hassle. Just pure
+                entertainment.
               </p>
             </div>
           </div>
@@ -510,29 +513,36 @@
               class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
             >
               <div class="flex items-center space-x-3 mb-4">
-                <svg
-                  class="w-8 h-8 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                <div
+                  class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  ></path>
-                </svg>
+                  <!-- SVG 1 (AD icon, placeholder example) -->
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <text
+                      x="5"
+                      y="17"
+                      font-size="12"
+                      font-family="Arial"
+                      fill="white"
+                    >
+                      AD
+                    </text>
+                  </svg>
+                </div>
                 <h3 class="text-xl font-semibold text-gray-800">
-                  Residential Garage Doors
+                  Ads Free Entertainment
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                We offer a wide selection of stylish, durable garage doors
-                designed specifically for homes throughout the Grand Valley.
-                Whether you want to enhance curb appeal, improve security, or
-                upgrade to a modern smart system, our residential doors combine
-                functionality with attractive designs to suit any home style.
+                An Ad-free platform that provides a seamless experience of
+                unlimited content. This helps create a focused atmosphere with
+                an Ad free zone to stay connected to the vibe. This makes it
+                easy to watch your favorite seasons or enjoy a movie night
+                without interruption.
               </p>
             </div>
 
@@ -540,29 +550,33 @@
               class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
             >
               <div class="flex items-center space-x-3 mb-4">
-                <svg
-                  class="w-8 h-8 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                <div
+                  class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                  ></path>
-                </svg>
+                  <!-- SVG 2 (Lock icon) -->
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 15v2m0-8a4 4 0 00-4 4v4h8v-4a4 4 0 00-4-4z"
+                    />
+                  </svg>
+                </div>
                 <h3 class="text-xl font-semibold text-gray-800">
-                  Commercial Garage Doors
+                  Unregistered Access
                 </h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Grand Valley Garage Doors provides robust and reliable solutions
-                for businesses and industrial properties. Our commercial garage
-                doors are built to withstand heavy use and harsh conditions,
-                offering security and efficiency for warehouses, shops, and
-                service centers.
+                Get into the ocean of movies, drama, and seasons with just a
+                single click, Unregistered Access is a feature that removes all
+                the hurdles. No need to sign up just open the app and get all
+                the access with full benefits.
               </p>
             </div>
 
@@ -570,99 +584,31 @@
               class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
             >
               <div class="flex items-center space-x-3 mb-4">
-                <svg
-                  class="w-8 h-8 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                <div
+                  class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  ></path>
-                </svg>
-                <h3 class="text-xl font-semibold text-gray-800">
-                  Overhead Garage Doors
-                </h3>
+                  <!-- SVG 3 (Duplicate icon) -->
+                  <svg
+                    class="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 16h8M8 12h8m-6-8h6a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V8l4-4z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">PIP Mode</h3>
               </div>
               <p class="text-gray-600 leading-relaxed">
-                Specializing in overhead garage doors, we supply and service
-                options that maximize space and ease of use for residential and
-                commercial properties alike. From traditional sectional doors to
-                modern insulated designs, our overhead doors provide
-                convenience, durability, and enhanced security.
-              </p>
-            </div>
-
-            <div
-              class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
-            >
-              <div class="flex items-center space-x-3 mb-4">
-                <svg
-                  class="w-8 h-8 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V5a1 1 0 011-1h3a1 1 0 001-1V3a2 2 0 012-2z"
-                  ></path>
-                </svg>
-                <h3 class="text-xl font-semibold text-gray-800">
-                  Garage Door Maintenance
-                </h3>
-              </div>
-              <p class="text-gray-600 leading-relaxed">
-                Preventative maintenance keeps your door operating smoothly
-                year-round. We provide inspections, tune-ups, and lubrication
-                services that extend the life of your door and catch problems
-                before they become costly repairs.
-              </p>
-            </div>
-
-            <div
-              class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
-            >
-              <div class="flex items-center space-x-3 mb-4">
-                <svg
-                  class="w-8 h-8 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  ></path>
-                </svg>
-                <h3 class="text-xl font-semibold text-gray-800">
-                  Openers & Accessories
-                </h3>
-              </div>
-              <p class="text-gray-600 leading-relaxed">
-                Whether you're upgrading to a quieter motor or want the
-                convenience of Wi-Fi-connected openers, we install and service a
-                wide range of modern opener systems and accessories for greater
-                control and security.
+                Now you can multitask on your phone using PIP (picture in
+                picture) mode. Sometimes it is hectic to stop your show for a
+                fraction of a second, get engaged in some other task, and come
+                back to watch your video.
               </p>
             </div>
           </div>
@@ -671,16 +617,11 @@
     </section>
 
     <!-- More Section -->
-    <section id="more" class="py-20 bg-primary">
-      <div class="container mx-auto px-4">
+    <section id="more" class="py-20 bg-accent">
+      <div class="container mx-auto px-8">
         <div class="text-center">
           <div class="flex items-center justify-center space-x-4 mb-8">
-            <img
-              src="https://cdn-icons-png.freepik.com/512/9356/9356230.png"
-              alt="More Icon"
-              class="w-12 h-12 object-contain filter brightness-0 invert"
-            />
-            <h2 class="text-4xl font-bold text-white">More</h2>
+            <h2 class="text-4xl font-bold text-white">How to Download</h2>
           </div>
         </div>
       </div>
@@ -688,59 +629,62 @@
 
     <!-- Location Info Section -->
     <section class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Left Column: Google Map -->
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.75661200040676!2d-108.02157517795197!3d38.6464477350582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87475330ffb88b1b%3A0xdf773034621e7122!2sGrand%20Valley%20Garage%20Doors%20Repair%20%26%20Installation!5e0!3m2!1sen!2sus!4v1748277385364!5m2!1sen!2sus"
-              title="Grand Valley Garage Doors Location"
-              class="w-full h-[600px] rounded-lg border-0"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+          <div class="h-auto flex justify-center items-center">
+            <img
+              src="./Download-Install-Dooflix-768x1461.webp"
+              alt=""
+              class="max-w-[50%] h-auto rounded-lg shadow"
+            />
           </div>
 
           <!-- Right Column: Text Content -->
           <div class="space-y-6">
-            <h3 class="text-3xl font-bold text-gray-800">
-              Grand Valley Garage Doors
-            </h3>
+            <h3 class="text-3xl font-bold text-gray-800">Steps To Follow</h3>
 
             <div class="space-y-4 text-gray-600">
-              <p>
-                <a
-                  href="https://www.grandvalleygaragedoors.com/"
-                  class="font-bold text-primary hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Grand Valley Garage Doors
-                </a>
-                delivers professional, reliable, and personalized garage door
-                services designed to meet the needs of every homeowner. From
-                installations of high-performance garage doors to expert repairs
-                and routine maintenance, our work is driven by craftsmanship,
-                safety, and attention to detail. We understand the vital role
-                your garage door plays in both security and curb appeal, which
-                is why we approach every project with precision and care whether
-                you're upgrading to a new style or restoring function after
-                unexpected damage.
-              </p>
-
-              <p>
-                Serving Grand Junction and surrounding areas across the Grand
-                Valley, our team is proud to offer prompt, local service with a
-                focus on lasting quality and customer satisfaction. With a deep
-                understanding of the region's unique needs, we provide solutions
-                that are both durable and tailored to your lifestyle. Whether
-                you're a homeowner in need of quick service or a contractor
-                planning a custom build, Grand Valley Garage Doors is here to
-                provide expert support backed by years of trusted experience in
-                Western Colorado.
-              </p>
+              <ul class="custom-list">
+                <li>
+                  Ensure you are connected to a secure and stable internet
+                  connection.
+                </li>
+                <li>
+                  Go to your device settings and under the security menu find
+                  unknown source installations and allow your browser to install
+                  apps from unknown sources.
+                </li>
+                <li>
+                  Now click on the download button and it will start
+                  downloading. Due to any issues if it fails to install, click
+                  again on the download button on this website and it will
+                  shortly start downloading again.
+                </li>
+                <li>
+                  After Downloading, to install simply click on the APK file you
+                  will find in the download section in your browser. or Once the
+                  download is complete, open up the file manager and tap on the
+                  Dooflix APK file.
+                </li>
+                <li>
+                  Click on the install button to install the APK file on your
+                  device. The installation process may take a few minutes to
+                  complete depending on device specification. The progress bar
+                  will be displayed to track your installation status.
+                </li>
+                <li>
+                  After the installation has been completed go back to the home
+                  screen of your phone and try to navigate to the Dooflix App
+                  Icon.
+                </li>
+                <li>
+                  Press the Icon to launch the application. And get free access
+                  to the latest Hollywood and Bollywood movies. Launching the
+                  first time might take an extra few seconds because of the
+                  setup process.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -748,27 +692,24 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="py-20 bg-primary text-white text-center">
-      <div class="container mx-auto px-4">
-        <h3
-          
-          class="text-3xl font-bold mb-8"
-        >
+    <section class="py-20 bg-accent text-white text-center">
+      <div class="container mx-auto px-8">
+        <h3 class="text-3xl font-bold mb-8">
           Visit Our Official Website for More Information
         </h3>
         <a
           href="https://doooflix.com/"
           target="_blank"
-          class="bg-dark text-primary hover:bg-gray-100 px-8 py-3 text-lg rounded-lg transition-all duration-300 transform hover:scale-105"
+          class="bg-primary hover-primary text-primary hover:bg-gray-100 px-8 py-3 text-lg rounded-lg transition-all duration-300 transform hover:scale-105"
         >
-          Visit Dooflix Official WebsiteS
+          Visit Dooflix Official Website
         </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-      <div class="container mx-auto px-4">
+    <footer class="bg-dark text-white py-8">
+      <div class="container mx-auto px-8">
         <div class="text-center">
           <p class="text-gray-300">
             Copyright © 2025
